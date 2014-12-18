@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20141218132925) do
 
   create_table "products", force: true do |t|
     t.string   "name"
-    t.decimal  "price"
-    t.decimal  "amount"
+    t.integer  "price_cents",  default: 0, null: false
+    t.integer  "amount_cents", default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

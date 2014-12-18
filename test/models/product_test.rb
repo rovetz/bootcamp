@@ -12,12 +12,12 @@ class ProductTest < ActiveSupport::TestCase
 
   test 'product have price' do
     assert @product.respond_to? :price
-    assert_not @product.update_attributes(price: nil)
+    assert_not @product.update_attributes(price_cents: nil)
   end
 
   test 'product have amount' do
     assert @product.respond_to? :amount
-    assert_not @product.update_attributes(amount: nil)
+    assert_not @product.update_attributes(amount_cents: nil)
   end
 
   test 'product full price is amount + 10% tax' do

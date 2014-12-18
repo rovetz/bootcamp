@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'haml', '~> 4.0.6'
+gem 'money-rails'

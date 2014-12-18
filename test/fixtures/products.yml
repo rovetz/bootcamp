@@ -2,10 +2,10 @@
 
 one:
   name: Product1
-  price: 9.99
-  amount: 1
+  price_cents: 899
+  amount_cents: 999
 
 two:
   name: Product2
-  price: 10.99
-  amount: 2
+  price_cents: 899
+  amount_cents: 999

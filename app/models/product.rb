@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  monetize :price_cents, as: :price
+  monetize :amount_cents, as: :amount
 
   validates :name, :price, :amount, presence: true
   validates :price, :amount, numericality: true
